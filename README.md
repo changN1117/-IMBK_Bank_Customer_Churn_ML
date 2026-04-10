@@ -49,6 +49,7 @@ AutoML을 이용해 f1_score가 가장 높게 나온 모델 4개를 찾았습니
 
 가장 성능이 뛰어난 cat boost모델로 shap value를 시각화 했습니다.
 <img width="766" height="557" alt="shap-value" src="https://github.com/user-attachments/assets/3523ac0b-115b-4bba-b022-0471b0206fda" />
+
 도출된 shap value의 해석본입니다.
 - 이용 상품 수가 많을수록 고객이 유지되고 적을수록 이탈할 가능성이 높습니다 하지만 너무 많은 상품의 이용은 고객이 이탈할 가능성이 있습니다
 - 나이가 어릴수록 유지될 확률이 높고 높읈록 이탈할 확률이 높습니다

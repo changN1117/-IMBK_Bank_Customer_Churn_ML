@@ -34,7 +34,7 @@
 
 ## 7. AutoML – Hyperparameter Tuning – Stacking Pipe – Shap value
 
-AutoML을 f1_score가 가장 높게 나온 모델 4개를 찾았습니다.
+AutoML을 이용해 f1_score가 가장 높게 나온 모델 4개를 찾았습니다.
 <img width="742" height="555" alt="best_model" src="https://github.com/user-attachments/assets/b7d66538-05ae-4d91-acf4-9e640a46a8e7" />
 
 그 후 개별 모델의 f1_score를 극대화하기 위한 최적의 파라미터 조합을 탐색하기 위하여 optuna를 통해 각 모델당 10회 이상의 반복시행을 하여 최적값을 도출했습니다.

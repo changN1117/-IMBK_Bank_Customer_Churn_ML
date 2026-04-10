@@ -32,14 +32,19 @@
 
 ## 7. AutoML – Hyperparameter Tuning – Stacking Pipe – Shap value
 
-AutoML을 f1_score가 가장 높게 나온 모델 4개를 찾았습니다.<img width="742" height="555" alt="best_model" src="https://github.com/user-attachments/assets/b7d66538-05ae-4d91-acf4-9e640a46a8e7" />
+AutoML을 f1_score가 가장 높게 나온 모델 4개를 찾았습니다.
+<img width="742" height="555" alt="best_model" src="https://github.com/user-attachments/assets/b7d66538-05ae-4d91-acf4-9e640a46a8e7" />
 
-그 후 개별 모델의 f1_score를 극대화하기 위한 최적의 파라미터 조합을 탐색하기 위하여 optuna를 통해 각 모델당 10회 이상의 반복시행을 하여 최적값을 도출했습니다.<img width="353" height="98" alt="옵튜나png" src="https://github.com/user-attachments/assets/e9cfac6a-a301-4524-a684-440f6491f1f9" />
+그 후 개별 모델의 f1_score를 극대화하기 위한 최적의 파라미터 조합을 탐색하기 위하여 optuna를 통해 각 모델당 10회 이상의 반복시행을 하여 최적값을 도출했습니다.
+<img width="353" height="98" alt="옵튜나png" src="https://github.com/user-attachments/assets/e9cfac6a-a301-4524-a684-440f6491f1f9" />
 
-그렇게 나온 최적의 4가지 모델들을 결합하여 스태킹 모델을 만들었습니다. <img width="583" height="296" alt="스태킹 모델" src="https://github.com/user-attachments/assets/a1fd212c-ed5f-496c-97d3-935b4d129301" />
-성능을 향상시키기 위해서 4개의 모델을 결합하여 학습을 진행하였지만 뚜렷한 성능의 향상은 일어나지 않았습니다.<img width="660" height="100" alt="스택킹" src="https://github.com/user-attachments/assets/240ce33f-7641-4f34-bb7c-801460580f7c" />
+그렇게 나온 최적의 4가지 모델들을 결합하여 스태킹 모델을 만들었습니다. 
+<img width="583" height="296" alt="스태킹 모델" src="https://github.com/user-attachments/assets/a1fd212c-ed5f-496c-97d3-935b4d129301" />
+성능을 향상시키기 위해서 4개의 모델을 결합하여 학습을 진행하였지만 뚜렷한 성능의 향상은 일어나지 않았습니다.
+<img width="660" height="100" alt="스택킹" src="https://github.com/user-attachments/assets/240ce33f-7641-4f34-bb7c-801460580f7c" />
 
-그래서 가장 성능이 뛰어난 cat boost모델로 shap value를 시각화 했습니다.<img width="766" height="557" alt="shap-value" src="https://github.com/user-attachments/assets/3523ac0b-115b-4bba-b022-0471b0206fda" />
+그래서 가장 성능이 뛰어난 cat boost모델로 shap value를 시각화 했습니다.
+<img width="766" height="557" alt="shap-value" src="https://github.com/user-attachments/assets/3523ac0b-115b-4bba-b022-0471b0206fda" />
 도출된 shap value의 해석본입니다.
 - 이용 상품 수가 많을수록 고객이 유지되고 적을수록 이탈할 가능성이 높습니다 하지만 너무 많은 상품의 이용은 고객이 이탈할 가능성이 있습니다
 - 나이가 어릴수록 유지될 확률이 높고 높읈록 이탈할 확률이 높습니다

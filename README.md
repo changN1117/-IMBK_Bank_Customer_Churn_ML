@@ -42,6 +42,7 @@ AutoML을 f1_score가 가장 높게 나온 모델 4개를 찾았습니다.
 
 그렇게 나온 최적의 4가지 모델들을 결합하여 스태킹 모델을 만들었습니다. 
 <img width="583" height="296" alt="스태킹 모델" src="https://github.com/user-attachments/assets/a1fd212c-ed5f-496c-97d3-935b4d129301" />
+
 성능을 향상시키기 위해서 4개의 모델을 결합하여 학습을 진행하였지만 뚜렷한 성능의 향상은 일어나지 않았습니다.
 <img width="660" height="100" alt="스택킹" src="https://github.com/user-attachments/assets/240ce33f-7641-4f34-bb7c-801460580f7c" />
 
